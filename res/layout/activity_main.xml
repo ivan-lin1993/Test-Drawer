@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.test.MainActivity" >
+
+    <Button
+        android:id="@+id/left_menu_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Menu" />
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/left_menu_button"
+        android:layout_centerHorizontal="true" />
+
+	<Button
+	    android:id="@+id/about"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/rate"
+	    android:text="About" />
+
+	<Button
+	    android:id="@+id/search"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/eatWhat"
+	    android:layout_alignBottom="@+id/eatWhat"
+	    android:layout_alignParentRight="true"
+	    android:text="Search" />
+
+	<Button
+	    android:id="@+id/rate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/about"
+	    android:layout_below="@+id/search"
+	    android:layout_marginTop="40dp"
+	    android:text="Rate" />
+
+	<Button
+	    android:id="@+id/news"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/search"
+	    android:layout_below="@+id/search"
+	    android:layout_marginTop="40dp"
+	    android:text="News" />
+
+	<EditText
+	    android:id="@+id/eatWhat"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/rate"
+	    android:layout_below="@+id/analogClock1"
+	    android:contentDescription="@string/hello_world"
+	    android:ems="10"
+	    android:inputType="text" >
+
+	    <requestFocus />
+	</EditText>
+
+</RelativeLayout>
